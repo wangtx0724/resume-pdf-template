@@ -26,6 +26,29 @@ The source coordinate system uses 96dpi CSS-like units. Its effective point size
 the grid values multiplied by `0.75`: name `30 px`, section title `20 px`, entry name
 `16 px`, role/date/body `13 px`, and content labels `14 px`.
 
+## Required Anchor Map
+
+These anchors are mandatory for this fixed template. Values below are on the 96dpi
+reference grid; convert to PDF points by multiplying by `0.75`.
+
+| Element | Page | Baseline y | Font size |
+| --- | --- | ---: | ---: |
+| Name | 1 | 63 | 30 px bold |
+| Contact line | 1 | 99 | 13 px |
+| Intent line | 1 | 123 | 13 px |
+| Personal strengths title | 1 | 175 | 20 px bold |
+| First strength label/body | 1 | 216 / 240 | 13 px |
+| Work title / entry | 1 | 464 / 506 | 20 / 16 px bold |
+| Work detail rows | 1 | 535, 559, 607, 631 | 13 px |
+| Project title / first entry | 1 | 687 / 729 | 20 / 16 px bold |
+| First project labels | 1 | 757, 780, 804, 857 | 14 / 13 px |
+| Second project entry | 1 | 927 | 16 px bold |
+| Page 2 project entry | 2 | 1163 | 16 px bold |
+| Education title / entry | 2 | 1370 / 1412 | 20 / 16 px bold |
+
+Header text uses a shared visual center axis in the text column, rather than the
+physical center of the A4 page, so it remains aligned with the photo at top right.
+
 ## Type Scale
 
 | Role | Font | Size | Alignment |
@@ -75,3 +98,5 @@ the grid values multiplied by `0.75`: name `30 px`, section title `20 px`, entry
 - Verify no missing glyphs, clipped lines, overlapping elements, or incorrect font substitution.
 - Verify the photo is authorized and all visible metadata is correct.
 - Verify dates align right, section dividers are light and thin, and project headers retain their three-part hierarchy.
+- Extract output positions and compare fixed anchors against the map above.
+- Render source and output at the same resolution, inspect side by side at 100%, and block delivery when the visual QA thresholds in `SKILL.md` are not met.
