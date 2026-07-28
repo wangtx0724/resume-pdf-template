@@ -1,0 +1,4 @@
+interface:
+  display_name: "简历 PDF 母版排版"
+  short_description: "按固定中文母版生成、校验和匿名化简历 PDF"
+  default_prompt: "Use $resume-pdf-template to generate a Chinese PDF resume using the fixed template."
