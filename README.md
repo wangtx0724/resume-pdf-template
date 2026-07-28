@@ -20,6 +20,8 @@ python3 examples/generate_sanitized_sample.py
 
 The script uses ReportLab and the macOS STHeiti font as a vector fallback. To reproduce a supplied template exactly, use the complete licensed font specified by that template.
 
+The skill treats visual QA as a blocking gate: it extracts the source PDF's type and baseline measurements, then compares a same-resolution render of the output against the reference before delivery.
+
 ## Install as a Codex skill
 
 Copy this repository directory to:
