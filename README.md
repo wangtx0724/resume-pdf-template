@@ -2,11 +2,16 @@
 
 A reusable Codex skill for creating or reviewing Chinese two-page A4 resumes that follow a fixed visual template.
 
+## Generated preview
+
+[![Generated two-page resume preview](examples/sanitized-sample-preview.png)](examples/sanitized-sample-resume.pdf)
+
 ## What is included
 
 - `SKILL.md`: the workflow and privacy rules.
 - `references/layout-spec.md`: measurable layout, spacing, type, and divider guidance.
 - `examples/sanitized-sample-resume.pdf`: a fully fictional resume that demonstrates the target layout.
+- `examples/sanitized-sample-preview.png`: a first-page preview of the generated PDF.
 - `examples/generate_sanitized_sample.py`: the vector-PDF generator for that sample.
 - `examples/assets/synthetic-avatar.png`: an AI-generated, non-real-person avatar used only by the sample.
 - `scripts/install_alibaba_puhuiti.py`: one-time installer for the official default font.
