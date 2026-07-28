@@ -211,6 +211,7 @@ def main():
     c = canvas.Canvas(str(OUTPUT), pagesize=A4, pageCompression=1)
     c.setTitle("Sanitized Sample Resume")
     c.setAuthor("Resume PDF Template")
+    c.setCreator("Resume PDF Template")
     c.setSubject("Fictional sample for layout reference only")
     page_one(c)
     c.showPage()
